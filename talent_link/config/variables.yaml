@@ -9,13 +9,13 @@ Variables:
 
   talentlink-connector:
   
-    host: apiproxy.shared.lumessetalentlink.com
+    host: <myhost>
     
-    username: Ricoh Sandbox:axonivy_api:BO
+    username: <myuser>
     
     # [password]
-    password: K2iziebz
+    password: <mypassword>
     
-    apikey: 14e89284-9994-4eed-61bd-f67ded85af92
+    apikey: <myapikey>
 
 
