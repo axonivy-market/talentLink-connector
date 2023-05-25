@@ -28,7 +28,8 @@
             "result.attachment" : "in.#attachment",
             "result.error" : "in.#error"
           }
-        }
+        },
+        "tags" : "connector"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
