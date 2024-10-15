@@ -1,12 +1,11 @@
 # TalentLink Connector
 
-Axon Ivy’s TalentLink connector helps you accelerate your process automation initiatives by integrating [TalentLink](https://developer.lumesse-talenthub.com/) with your process application in the shortest possible time.
+[TalentLink](https://developer.lumesse-talenthub.com/) is a cloud-based recruitment and talent acquisition platform by Lumesse (now part of Cornerstone OnDemand). It streamlines the hiring process, from job postings to candidate management, screening, and reporting. TalentLink helps companies efficiently manage talent acquisition and automate HR processes.
 
 This connector:
 
--	Is based on REST and SOAP webservice technologies.
--	Gives you access to sample TalentLink functionality
--	reduces the integration effort to a minimum: Use the demo implementation, there you will find examples for the calls
+-	is based on REST and SOAP webservice technologies.
+-	gives you access to sample TalentLink functionality
 
 ## Demo
 
