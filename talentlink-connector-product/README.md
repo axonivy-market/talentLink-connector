@@ -9,7 +9,7 @@ This connector:
 
 ## Demo
 
-1. Call test process. It returns test data in log to you.
+Call test process. It returns test data in log to you.
 
 ## Setup
 
@@ -17,7 +17,7 @@ Before any interactions between the Axon Ivy Engine and TalentLink services can 
 
 1. Get a TalentLink account `host-name`, `user-name`, `password` and `api_key` to use.
 
-1. Override the variables for `host-name`, `user-name`, `password` and `api_key` in the demo project as shown in the example below.
+2. Override the variables for `host-name`, `user-name`, `password` and `api_key` in the demo project as shown in the example below.
 
 ```
 Variables:
