@@ -7,10 +7,10 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>talentLink-connector</module>
-    <module>talentLink-connector-demo</module>
-    <module>talentLink-connector-test</module>
-    <module>talentLink-connector-product</module>
+    <module>talentlink-connector-connector</module>
+    <module>talentlink-connector-demo</module>
+    <module>talentlink-connector-test</module>
+    <module>talentlink-connector-product</module>
   </modules>
 
   <scm>
