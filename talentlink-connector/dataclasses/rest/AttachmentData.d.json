@@ -1,0 +1,18 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/data-class.json",
+  "simpleName" : "AttachmentData",
+  "namespace" : "rest",
+  "fields" : [ {
+    "name" : "attachment",
+    "type" : "com.axonivy.connector.talentlink.entity.Attachment",
+    "modifiers" : [ ]
+  }, {
+    "name" : "attachmentId",
+    "type" : "Long",
+    "modifiers" : [ ]
+  }, {
+    "name" : "error",
+    "type" : "ch.ivyteam.ivy.bpm.error.BpmError",
+    "modifiers" : [ ]
+  } ]
+}

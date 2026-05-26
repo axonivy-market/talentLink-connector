@@ -1,5 +1,4 @@
 {
-  "format" : "10.0.0",
   "id" : "184C364CBAD7BCB0",
   "kind" : "CALLABLE_SUB",
   "config" : {
@@ -10,7 +9,7 @@
       "type" : "CallSubStart",
       "name" : "getStructuredDocumentById()",
       "config" : {
-        "callSignature" : "wsResponse",
+        "signature" : "wsResponse",
         "input" : {
           "params" : [
             { "name" : "documentId", "type" : "Long" }
@@ -28,13 +27,17 @@
             "result.document" : "in.#document",
             "result.error" : "in.#error"
           }
-        },
-        "tags" : "connector"
+        }
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
       },
-      "connect" : { "id" : "f3", "to" : "f2" }
+      "tags" : [
+        "connector"
+      ],
+      "connect" : [
+        { "id" : "f3", "to" : "f2" }
+      ]
     }, {
       "id" : "f1",
       "type" : "CallSubEnd",
@@ -46,18 +49,20 @@
       "type" : "WebServiceCall",
       "name" : "document",
       "config" : {
-        "clientId" : "1845780D24F6B50E",
-        "port" : "DocumentWebServicePort",
-        "inputParams" : {
-          "getStructuredDocumentById.documentId" : "in.documentId"
-        },
+        "clientId" : "documents",
         "output" : {
           "map" : {
             "out" : "in",
             "out.document" : "wsResponse"
           }
         },
-        "operation" : "getStructuredDocumentById"
+        "operation" : {
+          "name" : "getStructuredDocumentById",
+          "port" : "DocumentWebServicePort",
+          "parameters" : {
+            "getStructuredDocumentById.documentId" : "in.documentId"
+          }
+        }
       },
       "visual" : {
         "at" : { "x" : 224, "y" : 64 }
@@ -76,8 +81,13 @@
           "visual" : {
             "at" : { "x" : 256, "y" : 106 }
           },
-          "connect" : { "id" : "f6", "to" : "f1", "via" : [ { "x" : 352, "y" : 106 } ] }
+          "connect" : [
+            { "id" : "f6", "to" : "f1", "via" : [ { "x" : 352, "y" : 106 } ] }
+          ]
         } ],
-      "connect" : { "id" : "f4", "to" : "f1" }
-    } ]
+      "connect" : [
+        { "id" : "f4", "to" : "f1" }
+      ]
+    } ],
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/process.json"
 }

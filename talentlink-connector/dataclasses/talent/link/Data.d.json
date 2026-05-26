@@ -1,0 +1,96 @@
+{
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/data-class.json",
+  "simpleName" : "Data",
+  "namespace" : "talent.link",
+  "fields" : [ {
+    "name" : "document",
+    "type" : "com.mrted.ws.client.StructuredDocument",
+    "modifiers" : [ ]
+  }, {
+    "name" : "positions",
+    "type" : "java.util.List<com.lumessetalentlink.shared.apiproxy.tlk.rest.client.OpeningFullDto>",
+    "modifiers" : [ ]
+  }, {
+    "name" : "application",
+    "type" : "com.lumessetalentlink.shared.apiproxy.tlk.rest.client.QueuedApplicationDto",
+    "modifiers" : [ ]
+  }, {
+    "name" : "candidates",
+    "type" : "java.util.List<com.lumessetalentlink.shared.apiproxy.tlk.rest.client.CandidateFullDto>",
+    "modifiers" : [ ]
+  }, {
+    "name" : "departments",
+    "type" : "java.util.List<com.lumessetalentlink.shared.apiproxy.tlk.rest.client.DepartmentFullDto>",
+    "modifiers" : [ ]
+  }, {
+    "name" : "queue",
+    "type" : "java.util.List",
+    "modifiers" : [ ]
+  }, {
+    "name" : "candidateId",
+    "type" : "Long",
+    "modifiers" : [ ]
+  }, {
+    "name" : "positionId",
+    "type" : "Long",
+    "modifiers" : [ ]
+  }, {
+    "name" : "queryForDepartment",
+    "modifiers" : [ ]
+  }, {
+    "name" : "error",
+    "type" : "ch.ivyteam.ivy.bpm.error.BpmError",
+    "modifiers" : [ ]
+  }, {
+    "name" : "documentId",
+    "type" : "Long",
+    "modifiers" : [ ]
+  }, {
+    "name" : "queueName",
+    "modifiers" : [ ]
+  }, {
+    "name" : "queues",
+    "type" : "java.util.List<com.lumessetalentlink.shared.apiproxy.tlk.rest.client.QueueDto>",
+    "modifiers" : [ ]
+  }, {
+    "name" : "lovId",
+    "type" : "Long",
+    "modifiers" : [ ]
+  }, {
+    "name" : "lovs",
+    "type" : "java.util.List<com.lumessetalentlink.shared.apiproxy.tlk.rest.client.LovFullDto>",
+    "modifiers" : [ ]
+  }, {
+    "name" : "queryForPosition",
+    "modifiers" : [ ]
+  }, {
+    "name" : "queryForApplication",
+    "modifiers" : [ ]
+  }, {
+    "name" : "queryForCandidate",
+    "modifiers" : [ ]
+  }, {
+    "name" : "applicationId",
+    "type" : "Long",
+    "modifiers" : [ ]
+  }, {
+    "name" : "listOfApplications",
+    "type" : "java.util.List<com.lumessetalentlink.shared.apiproxy.tlk.rest.client.FullApplicationDto>",
+    "modifiers" : [ ]
+  }, {
+    "name" : "listOfContracts",
+    "type" : "java.util.List<com.lumessetalentlink.shared.apiproxy.tlk.rest.client.FullContractDto>",
+    "modifiers" : [ ]
+  }, {
+    "name" : "contractId",
+    "type" : "Long",
+    "modifiers" : [ ]
+  }, {
+    "name" : "queryForContract",
+    "modifiers" : [ ]
+  }, {
+    "name" : "idInQueue",
+    "type" : "Long",
+    "modifiers" : [ ]
+  } ]
+}

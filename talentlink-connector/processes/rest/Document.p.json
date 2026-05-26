@@ -1,5 +1,4 @@
 {
-  "format" : "10.0.0",
   "id" : "185DDFAB1E7B0FA1",
   "kind" : "CALLABLE_SUB",
   "config" : {
@@ -10,7 +9,7 @@
       "type" : "CallSubStart",
       "name" : "call(Long)",
       "config" : {
-        "callSignature" : "call",
+        "signature" : "call",
         "input" : {
           "params" : [
             { "name" : "documentId", "type" : "Long" }
@@ -23,7 +22,9 @@
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
       },
-      "connect" : { "id" : "f4", "to" : "f3" }
+      "connect" : [
+        { "id" : "f4", "to" : "f3" }
+      ]
     }, {
       "id" : "f1",
       "type" : "CallSubEnd",
@@ -35,18 +36,27 @@
       "type" : "RestClientCall",
       "name" : "Document",
       "config" : {
-        "path" : "/candidate/document/{documentId}",
-        "clientId" : "d8e4652e-41d5-4023-90c5-5c822b8600e2",
-        "clientErrorCode" : "ivy:error:rest:client",
-        "statusErrorCode" : "ivy:error:rest:client",
-        "templateParams" : {
-          "documentId" : "in.documentId"
+        "target" : {
+          "clientId" : "d8e4652e-41d5-4023-90c5-5c822b8600e2",
+          "path" : "/candidate/document/{documentId}",
+          "templateParams" : {
+            "documentId" : "in.documentId"
+          }
         },
-        "responseCode" : "ivy.log.fatal(response);"
+        "response" : {
+          "entity" : {
+            "code" : "ivy.log.fatal(response);"
+          },
+          "clientError" : "ivy:error:rest:client",
+          "statusError" : "ivy:error:rest:client"
+        }
       },
       "visual" : {
         "at" : { "x" : 224, "y" : 64 }
       },
-      "connect" : { "id" : "f2", "to" : "f1" }
-    } ]
+      "connect" : [
+        { "id" : "f2", "to" : "f1" }
+      ]
+    } ],
+  "$schema" : "https://json-schema.axonivy.com/14.0-dev/project/process.json"
 }
